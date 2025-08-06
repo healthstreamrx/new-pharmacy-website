@@ -1,32 +1,23 @@
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
-    e.preventDefault();
     const target = document.querySelector(this.getAttribute("href"));
     if (target) {
+      e.preventDefault();
       target.scrollIntoView({ behavior: "smooth" });
     }
   });
 });
 
-// WhatsApp Floating Button - Auto open WhatsApp chat
+// WhatsApp Button – no JS override needed unless dynamic
+// (HTML href already handles the action properly)
+
+// Optional: confirmation alert on form submission
 document.addEventListener("DOMContentLoaded", function () {
-  const whatsappBtn = document.querySelector(".whatsapp-float");
-  if (whatsappBtn) {
-    whatsappBtn.addEventListener("click", function () {
-      const phoneNumber = "5162243044";
-      const message = encodeURIComponent("Hello! I have a question about your pharmacy services.");
-      window.open(`https://wa.me/1${phoneNumber}?text=${message}`, "_blank");
+  const refillForm = document.querySelector(".refill form");
+  if (refillForm) {
+    refillForm.addEventListener("submit", function () {
+      alert("✅ Thank you! Your request has been submitted.");
     });
   }
 });
-
-// Simple form submission alert (optional)
-const contactForm = document.querySelector("form");
-if (contactForm) {
-  contactForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-    alert("Thank you! Your message has been sent. We'll respond shortly.");
-    this.reset(); // Clear form
-  });
-}
