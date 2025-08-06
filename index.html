@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Health Stream RX</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/599/599305.png" />
 </head>
 <body>
 
   <!-- Header -->
   <header class="custom-header">
     <div class="logo-container">
-      <img src="https://i.ibb.co/MysQm9nX/Health-Streamrx-logo.png" alt="Health Stream RX Logo" class="custom-logo" />
+      <img src="https://i.ibb.co/MysQm9nX/Health-Streamrx-logo.png" alt="Health Stream RX Logo" class="custom-logo">
     </div>
     <nav>
       <ul>
@@ -23,74 +24,69 @@
     </nav>
   </header>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section class="hero">
     <h1>Welcome to Health Stream RX</h1>
-    <p>Your trusted neighborhood pharmacy in Valley Stream, NY.</p>
-    <a href="#refill" class="cta-button">💊 Refill or Transfer</a>
+    <p>Your health is our priority. Fast, friendly, reliable service.</p>
+    <a href="#refill" class="cta-button">Refill or Transfer Prescription</a>
   </section>
 
-  <!-- About -->
+  <!-- About Section -->
   <section id="about" class="about">
     <h2>About Us</h2>
-    <p>At Health Stream RX, we provide more than just prescriptions. We deliver care with a personal touch. Whether you’re transferring your prescriptions or looking for professional advice, we’re here to support your wellness journey.</p>
+    <p>Located in Valley Stream, NY, Health Stream RX provides personalized care with fast service and genuine compassion. Whether it’s prescriptions, consultations, or over-the-counter essentials, we’re your local health partner.</p>
   </section>
 
-  <!-- Services -->
+  <!-- Services Section -->
   <section id="services" class="services">
     <h2>Our Services</h2>
     <div class="service-cards">
       <div class="card">
         <img src="https://i.ibb.co/SDY34Hqn/vaccination.jpg" alt="Vaccinations">
         <h4>Vaccinations</h4>
-        <p>Stay protected with our full range of immunizations.</p>
+        <p>Protective immunizations administered by licensed professionals.</p>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/zW9TnqHV/consult.jpg" alt="Consultations">
         <h4>Consultations</h4>
-        <p>Get advice on your prescriptions and general health concerns.</p>
+        <p>Speak with pharmacists who care about your health and time.</p>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/cmvQGbt/Workers-Compensation.jpg" alt="Workers Compensation">
         <h4>Workers' Compensation</h4>
-        <p>We handle prescriptions for job-related injuries.</p>
+        <p>Hassle-free prescriptions for work-related injuries.</p>
       </div>
       <div class="card">
-        <img src="https://i.ibb.co/ynbyNFNd/No-Fault.jpg" alt="No-Fault Insurance">
+        <img src="https://i.ibb.co/ynbyNFNd/No-Fault.jpg" alt="No-Fault">
         <h4>No-Fault Insurance</h4>
-        <p>Fast, seamless service for accident claims and auto injuries.</p>
+        <p>Prescription support after auto accidents and personal injury cases.</p>
       </div>
       <div class="card">
-        <img src="https://i.ibb.co/NgPJWm34/otc.jpg" alt="OTC">
+        <img src="https://i.ibb.co/NgPJWm34/otc.jpg" alt="OTC Products">
         <h4>OTC Products</h4>
-        <p>Shop vitamins, supplements, cold relief and more.</p>
+        <p>Everything from pain relief to vitamins — all in one place.</p>
       </div>
       <div class="card">
         <img src="https://i.ibb.co/0VBHLhMt/PC.jpg" alt="Personal Care">
-        <h4>Personalized Support</h4>
-        <p>Friendly, one-on-one help for all your medication needs.</p>
+        <h4>Personalized Care</h4>
+        <p>Friendly, fast, and focused on your unique health needs.</p>
       </div>
     </div>
   </section>
 
-  <!-- Refill Form -->
+  <!-- Refill Section -->
   <section id="refill" class="refill">
     <h2>Refill or Transfer Your Prescription</h2>
-    <form action="https://formsubmit.co/healthstreamrx@gmail.com" method="POST">
+    <form action="https://formspree.io/f/xdkdwbny" method="POST">
       <input type="text" name="Full Name" placeholder="Full Name" required />
-      <input type="date" name="Date of Birth" required />
+      <input type="date" name="Date of Birth" placeholder="Date of Birth" required />
       <input type="tel" name="Phone" placeholder="Phone Number" required />
       <input type="email" name="Email" placeholder="Email Address" required />
-      <input type="text" name="Previous Pharmacy" placeholder="Previous Pharmacy (if any)" />
+      <input type="text" name="Previous Pharmacy" placeholder="Previous Pharmacy Name (if any)" />
       <input type="text" name="Prescription" placeholder="Prescription Name or RX Number" required />
       <textarea name="Notes" placeholder="Additional Notes (optional)"></textarea>
-
-      <!-- Redirect to custom thank you page -->
-      <input type="hidden" name="_next" value="https://healthstreampharmacy.com/thank-you.html" />
-      <input type="hidden" name="_captcha" value="false" />
-      <input type="hidden" name="_template" value="table" />
-
-      <button type="submit">Submit Request</button>
+      <input type="hidden" name="_redirect" value="https://healthstreampharmacy.com/thank-you.html" />
+      <button type="submit">Submit Refill Request</button>
     </form>
   </section>
 
@@ -104,15 +100,19 @@
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Health Stream RX. All rights reserved.</p>
-    <p>Care You Can Count On</p>
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="privacy.html" class="footer-link">Privacy Policy</a>
+      <a href="hipaa.html" class="footer-link">HIPAA Disclaimer</a>
+    </div>
+    <p class="footer-text">© 2025 Health Stream RX. All rights reserved.</p>
   </footer>
 
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/15162243044?text=Hi%20Health%20Stream%20RX!%20I%20have%20a%20question." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon" />
+  <!-- WhatsApp Button -->
+  <a class="whatsapp-float" href="https://wa.me/15162243044?text=Hello!%20I%20have%20a%20question%20about%20your%20pharmacy%20services." target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp" class="whatsapp-icon">
   </a>
 
+  <script src="script.js"></script>
 </body>
 </html>
