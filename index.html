@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 <body>
+
+  <!-- Header -->
   <header class="custom-header">
     <div class="logo-container">
       <img src="https://i.ibb.co/MysQm9nX/Health-Streamrx-logo.png" alt="Health Stream RX Logo" class="custom-logo">
@@ -18,22 +20,28 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#refill">Refill</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="hipaa.html">HIPAA</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Hero -->
   <section class="hero">
     <h1>Welcome to Health Stream RX</h1>
     <p>Your health is our priority. Fast, friendly, reliable service.</p>
   </section>
 
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <a href="#refill" class="cta-button">💊 Refill or Transfer Your Prescription</a>
+  </section>
+
+  <!-- About -->
   <section id="about" class="about">
     <h2>About Us</h2>
     <p>Located in Valley Stream, NY, Health Stream RX delivers personalized pharmacy care. From prescription fills to consultations, we’re your local health partner.</p>
   </section>
 
+  <!-- Services -->
   <section id="services" class="services">
     <h2>Our Services</h2>
     <div class="service-cards">
@@ -53,12 +61,12 @@
         <p>Prescription services for work-related injuries.</p>
       </div>
       <div class="card">
-        <img src="https://i.ibb.co/ynbyNFNd/No-Fault.jpg" alt="No-Fault">
+        <img src="https://i.ibb.co/ynbyNFNd/No-Fault.jpg" alt="No-Fault Insurance">
         <h4>No-Fault Insurance</h4>
         <p>Seamless prescription help after auto accidents.</p>
       </div>
       <div class="card">
-        <img src="https://i.ibb.co/NgPJWm34/otc.jpg" alt="OTC">
+        <img src="https://i.ibb.co/NgPJWm34/otc.jpg" alt="OTC Products">
         <h4>OTC Products</h4>
         <p>Wide range of over-the-counter medications and health essentials.</p>
       </div>
@@ -70,24 +78,29 @@
     </div>
   </section>
 
+  <!-- Refill / Transfer -->
   <section id="refill" class="refill">
     <h2>Refill or Transfer Your Prescription</h2>
     <form action="https://formsubmit.co/healthstreamrx@gmail.com" method="POST">
       <input type="text" name="Full Name" placeholder="Full Name" required />
-      <input type="date" name="Date of Birth" placeholder="Date of Birth" required />
+      <input type="date" name="Date of Birth" required />
       <input type="tel" name="Phone" placeholder="Phone Number" required />
       <input type="email" name="Email" placeholder="Email Address" required />
       <input type="text" name="Previous Pharmacy" placeholder="Previous Pharmacy Name (if any)" />
       <input type="text" name="Prescription" placeholder="Prescription Name or RX Number" required />
       <textarea name="Notes" placeholder="Additional Notes (optional)"></textarea>
 
-      <input type="hidden" name="_next" value="https://healthstreampharmacy.com/thank-you.html">
-      <input type="hidden" name="_captcha" value="false">
+      <!-- Hidden FormSubmit Fields -->
+      <input type="hidden" name="_next" value="https://healthstreampharmacy.com/thank-you.html" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_subject" value="New Refill Request from Health Stream RX" />
+      <input type="hidden" name="_template" value="table" />
 
       <button type="submit">Submit Refill Request</button>
     </form>
   </section>
 
+  <!-- Contact -->
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
     <p><strong>Address:</strong> 49 N Central Ave Suite A, Valley Stream, NY 11580</p>
@@ -96,13 +109,21 @@
     <iframe src="https://www.google.com/maps?q=49+N+Central+Ave,+Valley+Stream,+NY+11580&output=embed" allowfullscreen></iframe>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Health Stream RX | <a href="privacy.html">Privacy Policy</a> | <a href="hipaa.html">HIPAA Disclaimer</a></p>
+    <p>&copy; 2025 Health Stream RX |
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="hipaa.html">HIPAA Disclaimer</a>
+    </p>
     <p>Care You Can Count On</p>
   </footer>
 
-  <a href="https://wa.me/15162243044" class="whatsapp-float" target="_blank">💬</a>
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/15162243044" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" class="whatsapp-icon" />
+  </a>
 
+  <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="script.js"></script>
 </body>
