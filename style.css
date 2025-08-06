@@ -1,139 +1,131 @@
-/* General Styles */
-body {
+/* General Reset & Base Styles */
+* {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f0faff;
-  color: #222;
-  scroll-behavior: smooth;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0faff;
+  color: #222;
+  line-height: 1.6;
 }
 
 /* Header */
 .custom-header {
   background: #ade8f4;
-  padding: 20px 15px;
+  padding: 20px;
   text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.logo-container img.custom-logo {
-  max-width: 280px;
-  height: auto;
+.logo-container {
   margin-bottom: 10px;
 }
 
+.custom-logo {
+  max-width: 280px;
+  height: auto;
+}
+
+/* Navigation */
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
+  gap: 25px;
+  margin-top: 10px;
 }
 
 nav ul li a {
-  font-weight: bold;
+  text-decoration: none;
   color: #023e8a;
-  font-size: 16px;
-  transition: color 0.3s;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
   color: #0077b6;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
-  background: #caf0f8;
   padding: 60px 20px;
   text-align: center;
+  background: #caf0f8;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: #0077b6;
   margin-bottom: 15px;
 }
 
 .hero p {
-  font-size: 1.1rem;
-  color: #222;
-}
-
-/* CTA Button Section */
-.cta-banner {
-  background: #0077b6;
-  text-align: center;
-  padding: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #333;
 }
 
 .cta-button {
-  background: #00b4d8;
-  color: white;
+  background-color: #0077b6;
+  color: #fff;
   padding: 14px 30px;
-  border-radius: 30px;
-  font-size: 16px;
-  font-weight: 600;
-  display: inline-block;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
   transition: background 0.3s ease;
 }
 
 .cta-button:hover {
-  background: #0096c7;
+  background-color: #0096c7;
 }
 
-/* Section Base */
+/* Sections */
 section {
-  padding: 60px 20px;
+  padding: 50px 20px;
   max-width: 1100px;
   margin: 0 auto;
+  text-align: center;
 }
 
-/* About Section */
+/* About */
 .about {
   background: #0077b6;
   color: white;
-  border-radius: 10px;
-  padding: 50px 30px;
-  text-align: center;
+  border-radius: 8px;
+  padding: 60px 30px;
 }
 
 .about h2 {
-  margin-bottom: 20px;
+  font-size: 2rem;
   color: #ade8f4;
+  margin-bottom: 20px;
 }
 
-/* Services Section */
-.services h2 {
-  text-align: center;
-  color: #0077b6;
-  margin-bottom: 30px;
-}
-
+/* Services */
 .service-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
+  gap: 30px;
+  margin-top: 30px;
 }
 
 .card {
   background: white;
   border-radius: 10px;
   padding: 20px;
-  width: 260px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 119, 182, 0.15);
+  width: 270px;
+  box-shadow: 0 4px 12px rgba(0, 119, 182, 0.1);
   transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
 
 .card img {
@@ -141,7 +133,7 @@ section {
   height: 160px;
   object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .card h4 {
@@ -149,122 +141,122 @@ section {
   margin-bottom: 10px;
 }
 
-/* Refill Form */
-.refill h2 {
-  text-align: center;
-  color: #0077b6;
-  margin-bottom: 30px;
+.card p {
+  font-size: 0.95rem;
+  color: #333;
 }
 
+/* Form */
 form {
+  max-width: 500px;
+  margin: 30px auto 0;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
-  margin: 0 auto;
+  gap: 14px;
 }
 
 form input,
 form textarea {
   padding: 12px;
-  font-size: 15px;
+  font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 6px;
+  resize: vertical;
+}
+
+form textarea {
+  min-height: 100px;
 }
 
 form button {
-  background: #0077b6;
+  background-color: #0077b6;
   color: white;
   padding: 14px;
   border: none;
   border-radius: 6px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s ease;
 }
 
 form button:hover {
-  background: #0096c7;
+  background-color: #0096c7;
 }
 
-/* Contact Section */
-.contact h2 {
-  text-align: center;
-  color: #0077b6;
-  margin-bottom: 20px;
-}
-
+/* Contact */
 .contact p {
-  font-size: 16px;
-  text-align: center;
-  margin: 5px 0;
+  margin-bottom: 10px;
+  font-size: 1rem;
 }
 
 .contact iframe {
   width: 100%;
   height: 300px;
   border: none;
+  border-radius: 8px;
   margin-top: 20px;
-  border-radius: 10px;
 }
 
 /* Footer */
 footer {
-  background: #023e8a;
+  background-color: #023e8a;
   color: white;
   text-align: center;
-  padding: 30px 15px;
+  padding: 25px 20px;
+}
+
+footer p {
+  margin: 8px 0;
 }
 
 footer a {
   color: #ade8f4;
   text-decoration: none;
-  font-weight: 500;
 }
 
 footer a:hover {
   text-decoration: underline;
 }
 
-/* WhatsApp Floating Icon */
+/* WhatsApp Floating Button */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 999;
+  z-index: 1000;
+  background: transparent;
+  border: none;
 }
 
 .whatsapp-icon {
   width: 55px;
   height: 55px;
-  border-radius: 50%;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease;
 }
 
-.whatsapp-icon:hover {
+.whatsapp-float:hover .whatsapp-icon {
   transform: scale(1.1);
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
   .service-cards {
     flex-direction: column;
     align-items: center;
   }
 
-  .cta-button {
-    font-size: 14px;
-    padding: 12px 20px;
+  .card {
+    width: 90%;
   }
 
   nav ul {
     flex-direction: column;
     gap: 10px;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
   }
 }
